@@ -1,4 +1,4 @@
-function! Fix-JDA-MCODE()
+function! FixJDAmcode()
   " Preparation: save last search, and cursor position.
   let _s=@/
   let l = line(".")
@@ -45,7 +45,7 @@ function! Fix-JDA-MCODE()
   call cursor(l, c)
 endfunction
 
-function! Fix-HP-MCODE()
+function! FixHPmcode()
   " Preparation: save last search, and cursor position.
   let _s=@/
   let l = line(".")
@@ -92,6 +92,6 @@ function! Fix-HP-MCODE()
   call cursor(l, c)
 endfunction
 
-nnoremap <Leader>mh :call Fix-HP-MCODE()<CR>
-nnoremap <Leader>mj :call Fix-JDA-MCODE()<CR>
+nnoremap <Leader>fmh :call FixHPmcode()<CR>
+nnoremap <Leader>fmj :call FixJDAmcode()<CR>
 
