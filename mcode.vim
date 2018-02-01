@@ -12,9 +12,9 @@ function! FixJDAmcode()
   call cursor(sl,1)
 	4,.delete
 	%s/\(^\S\+\) /\1:/
-	%s/ A... /.con 0x/
+	%s/ A\x\x\x \(\x\x\x\)/.con 0x\1/
 	%s/\(.con 0x...  \)      /\1;/
-	%s/.con 0x...  ;  .F/./
+	%s/.con 0x...  ;  .FNAME/.NAME/
 	%s/.NAME      \(\S\+\).*/.NAME \1/
   call cursor(1,1)
 	while search(" JC ", 'W') > 0
@@ -59,9 +59,9 @@ function! FixHPmcode()
   call cursor(sl,1)
 	4,.delete
 	%s/\(^\S\+\) /\1:/
-	%s/ A... /.con 0x/
+	%s/ A\x\x\x \(\x\x\x\)/.con 0x\1/
 	%s/\(.con 0x...  \)      /\1;/
-	%s/.con 0x...  ;  .F/./
+	%s/.con 0x...  ;  .FNAME/.NAME/
 	%s/.NAME      \(\S\+\).*/.NAME \1/
   call cursor(1,1)
 	while search(" GOC ", 'W') > 0
