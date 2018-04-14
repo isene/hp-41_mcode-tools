@@ -13,3 +13,6 @@ To source the plugin for files with extensions "*.s" and "*.asm", place "mcoed.v
 It includes two scripts - one that fixes HP mnemonic disassembled files and one that fixes JDA mnemonics. By "fixing" is meant to ready the files to be used by Håkan Tørngren's Nutstudio. The scripts takes files that have one hex code per line (see the M2KM options) with labels throughout and links all labels with correct goto/gosub statements and comments out the mnemonics and leaves the hex code to be read by Nutstudio via the ".con" directive. See the AMASTRO.ROM project as an example: https://github.com/isene/hp-41_AMASTRO.ROM
 
 More tools will be added as I see fit.
+
+## License
+This software is released into the Public Domain.
