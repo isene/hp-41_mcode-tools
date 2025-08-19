@@ -6,6 +6,7 @@
 [![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
 
 <img src="img/mcode_tools_logo.svg" align="left" width="150" height="150" alt="MCODE-TOOLS Logo">
+<br clear="left"/>
 
 A collection of tools for MCODE (assembly) programming on the Coconut processor (HP-41 calculator)
 
